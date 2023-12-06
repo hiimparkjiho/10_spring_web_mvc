@@ -40,7 +40,7 @@ public class MenuController {
     public String insertMenuPage(MenuDTO menuDTO){
       menuService.insertMenu(menuDTO);
 
-        return "redirect:/menus";
+      return "redirect:/menus";
     }
 
     @GetMapping("/delete_menu")
@@ -49,9 +49,9 @@ public class MenuController {
     }
 
     @PostMapping("/delete")
-    public String deleteMenu(@RequestParam int code, @RequestParam String name){
+    public String deleteMenu(@RequestParam int code, @RequestParam String name){    // requestParam으로 PK와 이름을 전달
        menuService.deleteMenu(code, name);
-        return "redirect:/menus";
+       return "redirect:/menus";
     }
 
     @GetMapping("/update_menu")

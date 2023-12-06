@@ -22,7 +22,6 @@
     <insert id="insertMenu" parameterType="com.ohgiraffers.pos.menu.dto.MenuDTO">
         INSERT INTO TBL_MENU
         (
-            MENU_CODE,
             MENU_NAME,
             MENU_PRICE,
             CATEGORY_CODE,
@@ -30,7 +29,6 @@
         )
         VALUES
         (
-            #{code},
             #{name},
             #{price},
             #{categoryCode},
