@@ -29,6 +29,7 @@ public class MenuService {
         int result = menuDAO.insertMenu(menuDTO);
         if(result <= 0){
             System.out.println("다시 시도");
+
         }else{
             System.out.println("성공");
         }
@@ -51,7 +52,6 @@ public class MenuService {
             System.out.println("다시 시도");
         }else{
             System.out.println("성공");
-
         }
         return result;
     }
