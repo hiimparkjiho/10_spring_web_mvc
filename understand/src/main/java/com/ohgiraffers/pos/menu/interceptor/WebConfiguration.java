@@ -7,11 +7,17 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
-//    @Autowired
-//    private MenuInterceptor menuInterceptor;
-//
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//       registry.addInterceptor()
-//    }
+    @Autowired
+    private MenuInterceptor menuInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+       registry.addInterceptor(menuInterceptor)
+               .addPathPatterns("/menus/menu_auth")
+               .excludePathPatterns("/css/**")
+               .excludePathPatterns("/js/**")
+               .excludePathPatterns(("/image/**"));
+
+
+    }
 }

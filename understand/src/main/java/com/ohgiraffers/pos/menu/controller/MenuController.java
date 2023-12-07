@@ -26,9 +26,12 @@ public class MenuController {
         return "menu/mainView";
     }
 
-    @PostMapping("/")
+    @PostMapping("/menu_auth")
+    public String admin(){
+        return "menu/mainView";
+    }
 
-    @GetMapping
+    @GetMapping("/all_menu")
     public ModelAndView selectAllMenu(ModelAndView mv){
         List<MenuDTO> menus = menuService.selectAllMenu();
 
@@ -48,7 +51,7 @@ public class MenuController {
     @PostMapping("/insert")
     public String insertMenuPage(MenuDTO menuDTO){
         menuService.insertMenu(menuDTO);
-        return "redirect:/menus";
+        return "redirect:/menus/all_menu";
     }
 
     @GetMapping("/delete_menu")
