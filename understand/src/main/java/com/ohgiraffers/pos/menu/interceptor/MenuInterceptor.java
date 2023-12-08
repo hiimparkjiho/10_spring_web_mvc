@@ -1,6 +1,5 @@
 package com.ohgiraffers.pos.menu.interceptor;
 
-import com.ohgiraffers.pos.menu.service.MenuService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
