@@ -1,4 +1,4 @@
-package com.ohgiraffers.project_front_test;
+package com.ohgiraffers.viewtest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

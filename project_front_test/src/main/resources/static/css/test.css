@@ -5,10 +5,22 @@
 .emailDiv{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.signUpEmailDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 90px;
 }
 
 .emailDiv img{
+    height:30px;
+    width:30px;
+}
+
+.signUpEmailDiv img{
     height:30px;
     width:30px;
 }
@@ -21,10 +33,19 @@
     border-radius: 5px;
 }
 
+.signUpEmailDiv input{
+    background-color: #E7DFD7;
+    height: 40px; margin-left: 10px;
+    border-color: white;
+    outline: none;
+    border-radius: 5px;
+}
+
 .nicknameDiv{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-left: 90px;
 }
 
 .nicknameDiv img{
@@ -149,6 +170,10 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+.signUpBtn:hover{
+    color: #E7DFD7;;
 }
 
 .signUpBtnDiv button{
