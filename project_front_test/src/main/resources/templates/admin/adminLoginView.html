@@ -8,7 +8,7 @@
     <title>로그인 화면</title>
 </head>
 <body>
-<div class="loginLogo"><h1>로그인</h1></div>
+<div class="loginLogo"><h1>관리자 로그인</h1></div>
 <form action="" method="post">
     <div class="emailDiv">
         <img th:src="@{/img/envelope-solid.svg}" class="emailLogo"><input type="text" name="email" placeholder="이메일" size="60">
@@ -17,8 +17,7 @@
         <img th:src="@{/img/lock-solid.svg}" height="30px" width="30px" class="emailLogo"><input type="password" name="password" placeholder="비밀번호" size="60">
     </div>
     <div class="loginMenuDiv">
-        <a href="#">회원가입</a>
-        <a href="#" class="findPassTag">비밀번호 찾기</a>
+        <a href="#" class="adminPassFind">비밀번호 찾기</a>
     </div>
     <div class="loginBtnDiv">
         <button type="submit" class="btn loginBtn">로그인</button>

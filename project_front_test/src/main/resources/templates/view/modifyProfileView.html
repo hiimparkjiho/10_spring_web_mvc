@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 수정</title>
+    <link th:href="@{/css/test.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="loginLogo"><h1>프로필 닉네임 수정</h1></div>
+<form action="" method="post">
+    <div class="signUpEmailDiv">
+        <img th:src="@{/img/user-solid-light.svg}" class="emailLogo"><input type="text" class="orgNickname" name="nickname" placeholder="닉네임" size="60" value="${기존 닉네임}">
+    </div>
+    <div class="signUpEmailDiv">
+        <img th:src="@{/img/user-solid.svg}" class="emailLogo"><input type="text" name="nickname" placeholder="닉네임" size="60"><button class="mailDupliCheckBtn">중복확인</button>
+    </div>
+    <div class="dupliCheckDiv">
+        <small class="d-none dupliMail">중복된 닉네임</small>
+        <small class="d-none availableMail">사용 가능한 닉네임입니다.</small>
+    </div>
+    <div class="signUpBtnDiv">
+        <button type="submit" class="btn signUpBtn">수정</button>
+    </div>
+</form>
+</body>
+</html>
