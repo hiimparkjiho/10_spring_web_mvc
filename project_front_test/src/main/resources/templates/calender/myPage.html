@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datepicker</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>계획 번호</th>
+        <th>계획 이름</th>
+        <th>계획 시작날</th>
+        <th>계획 마지막날</th>
+        <th>시설 이름</th>
+    </tr>
+    <tr th:each="plans : ${plans}"> <!-- forEach문 -->
+        <td th:text="${plans.planCode}"></td>
+        <td th:text="${plans.planName}"></td>
+        <td th:text="${plans.startDate}"></td>
+        <td th:text="${plans.endDate}"></td>
+        <td th:text="${comps.compName}"></td>
+    </tr>
+</table>
+</body>
+</html>

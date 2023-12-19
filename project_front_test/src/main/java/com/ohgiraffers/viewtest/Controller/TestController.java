@@ -57,4 +57,5 @@ public class TestController {
     public String inquirySucces(){
         return "view/inquiryRegistSuccess";
     }
+
 }

@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/petales
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: petales
+    password: petales
+
+mybatis:
+  mapper-locations: mapper/*.xml
