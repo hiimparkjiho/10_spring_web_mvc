@@ -36,15 +36,12 @@
         )
     </insert>
 
-    <select id="selectAllPlan" resultMap="compResult" parameterType="String">
+    <select id="selectAllPlan" resultMap="planResult">
         SELECT
             A.PLAN_CODE,
             A.PLAN_NAME,
             A.START_DATE,
-            A.END_DATE,
-            B.COMP_NAME
+            A.END_DATE
         FROM PLAN_PRAC AS A
-        JOIN COM_PRAC AS B
-        ON A.PLAN_CODE = B.COMP_CODE
     </select>
 </mapper>
